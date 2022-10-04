@@ -4,38 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
     <link rel="stylesheet" href="css/main.css">
     
     <title>Learning NPM and SASS</title>
 </head>
 <body>
-  <h1 class="hidden">This is a team page</h1>
+    <h1 class="hidden">This is a team page</h1>
 
-  <section id="team-section"></section>
+    <section id="team-section"></section>
 
-  <!-- templete tags should go at the bottom of the HTML markup-->
-  <!-- templete tags don't get remember, but their content does-->
-  <template id="bio-template">
-    <section class="bio-panel">
-      <div class="avatar">
-        <!-- src gets added dynamically -->
-        <img src="" alt="prof image">
-      </div>
-      <!-- slug is just placeholder - this will get replaced -->
-      <h2 class="p_name">slug</h2>
-      <h3 class="p_role">slug</h3>
-      <p class="p_nickname">slug</p>
-    </section>
-  </template>
-    
-  <!-- your JS always goes here -->
-  <!-- make the JS file wait to be parsed with the defer attribute 
-  (last thing the DOM engine reads)-->
+    <!--- Chuck norris api stuff -->
+    <h1 class="norris-title">Go Get a Joke!</h1>
+    <h3 class="query-result"></h3>
+    <section class="queryControls"></section>
 
-  <!-- the type attribute tells the JS engine that we're using modules
-  (standalone JS file)-->
-  <!-- <script src="js/modules/data.js"></script> -->
-  <script src="js/main.js" type="module" defer></script>
+
+    <!--template -->
+    <template id="bio-template">
+        <section class="bio_panel">
+            <div class="avatar">
+                <img src="" alt="prog image">
+            </div>
+            <h2 class="p_name">slug</h2>
+            <h3 class="p_role">slug</h3>
+            <p class="p_nickname">slug</p>
+        </section>
+    </template>
+    <header class="header">
+        <nav>
+            <ul>
+
+        </nav>
+    </header>
+
+    <main class="content">
+        <article>
+            <h1 class="user-name"></h1>
+            <aside class="user-bio"></aside>
+        </article>
+    </main>
+
+    <footer>
+        <nav class="subnav">
+            <ul>
+
+            </ul>
+        </nav>
+    </footer>
+    <!-- -->
+    <!-- the type attribute tells the JS engine that we're using modules (stadalone JS files)-->
+     <!-- <script src="js/modules/data.js"></script>-->
+    <script src="js/main.js" type="module" defer></script>
 </body>
+
 </html>
