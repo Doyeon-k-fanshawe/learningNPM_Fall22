@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) {
+    // add the grid to the team section
+    #team-section {
+        display: grid;
+        //fit as many items possible in the grid container using minmax.
+        //each item's min width 170 pixels and its max width 1 fraction
+        //the grid system will divide up the available space 
+        grid-template-columns: repeat(auto-fit, minmax(170px,1fr));
+    }
+}
